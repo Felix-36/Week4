@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Felix
+ * 2.19.2020
+ *
+ */
+	public class CoatAdivser {
+
+		public static void main(String[] args) {
+		
+
+			Scanner kb = new Scanner(System.in);
+			System.out.println(" Welcome to Coat Adviser");
+			System.out.println("Enter Weather in fareinheiht");
+			double weather= kb.nextDouble();
+			
+			if(weather>70)
+				System.out.println("It's hot");
+			else if(weather>50)
+				System.out.println("It's warm");
+			else if(weather>30)
+				System.out.println("It's vold, wear a jacket");
+			else
+				System.out.println("It's too cold, wear a coat");
+		}
+}
+
